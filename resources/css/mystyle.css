@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+.bg{
+ background:url(../images/bg.png) no-repeat;
+ filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+ -moz-background-size:100% 100%;
+ background-size:100% 100%;
+ background-attachment:fixed;
+ margin:0 auto;
+ padding:0;
+ height:901px;
+ width:auto;
+ font-size:12px;
+}
+.header{
+ height:90px;
+ background:#000000;
+ font-family:"幼圆";
+ overflow:hidden;
+ }
+.logo{
+ border:none;
+ width:276px;
+ position:absolute;
+ top:0;
+ left:0;
+ margin:0;
+ padding:0;
+}
+.font-h1{
+ color:#FFFFFF;
+ font-weight:bold;
+ text-align:center;
+ margin-top:40px;
+}
+.content{
+ clear:both;
+ width:430px;
+ height:370px;
+ background:#000000;
+ margin:auto;
+ margin-top:115px;
+ border-radius:15px;
+ -moz-border-radius:15px;
+ -websit-border-radius:15px;
+}
+.shuru{
+ width:355px;
+ height:50px;
+ border:3px solid #646464;
+ margin-left:38px;
+ margin-top:40px;
+ background:#AFAFAF;
+ color:#545454;
+ font-size:2em;
+ font-weight:bold;
+}
+.button{
+ margin-left:38px;
+ margin:50px 36px 0 38px;
+}
+.href{
+ color:#7A7879;
+ text-decoration:none;
+ border-bottom:2px dotted #7A7879;
+ font-size:1.5em;
+ font-weight:bold;
+}
+a:hover{
+ text-decoration:none;
+}
+.sub{
+ width:110px;
+ float:right;
+ font-weight:bold;
+ font-size:1.6em;
+}
+.hr{
+ clear:both;
+ background:url(../images/hr.jpg) no-repeat center;
+ height:5px;
+ margin-top:50px;
+}
+.about-us{
+ text-align:center;
+}
