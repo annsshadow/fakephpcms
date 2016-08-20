@@ -1,45 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BluesCMS Backstage</title>
-<link href="<?php echo $base_url;?>resources/css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $base_url;?>resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $base_url;?>resources/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $base_url;?>resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $base_url;?>resources/css/mystyle.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>蓝山工作室</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="dist/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="dist/js/html5shiv.min.js"></script>
+    <script src="dist/js/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body style="overflow:hidden">
-<div class="container bg">
-  <div class="header">
-  <img src="<?php echo $base_url;?>/resources/images/logo.png" class="logo" />
-  </div><!--end header-->
-  <div class="content">
- <form class="form-horizontal" role="form">
-  <div class="error" id="error"></div>
-  <div class="form-group">
-    <div class="col-sm-10">
-      <input type="text" class="form-control shuru" id="inputEmail3" placeholder="用户名">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-10">
-      <input type="password" class="form-control shuru" id="inputPassword3" placeholder="密码">
-    </div>
-  </div>
-  <p class="button">
-   <a href="#" class="href"></a><button type="button" class="btn btn-primary btn-lg sub" id="check_login">登录</button>
-  </p>
-  <p class="hr"></p>
-  <p class="about-us">Management Platform @ 2015 Blues Team:AnnsShadoW, CQUPT </p>
-</form>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+<!--        <img src="../resources/images/logo.png" class="logo" />-->
+        <a href="#">LOGO</a>
+    </div><!-- /.login-logo -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="text-center">后台管理登录</h3>
+        </div>
+        <div class="box-body margin">
+            <form method="post" role="form">
+<!--            <form class="form-horizontal" role="form">-->
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="用户名">
+                    <span class="fa fa-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                    <span class="fa fa-key form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 pull-right">
+                        <button type="button" class="btn btn-primary btn-block btn-flat" id="check_login">登录</button>
+                    </div><!-- /.col -->
+                </div>
+            </form>
+        </div>
+        <div class="box-footer text-center text-gray text-sm">
+            Copyright © 2008-2016 重庆邮电大学 - 蓝山工作室
+        </div>
+    </div><!-- /.login-box-body -->
+</div><!-- /.login-box -->
 
-</div><!--end content-->
-
-</div>
-
-<script type="text/javascript" src="<?php echo $base_url;?>resources/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo $base_url;?>resources/js/ajax.js"></script>
+<!-- jQuery 2.1.4 -->
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../resources/js/jquery.js"></script>
+<script type="text/javascript" src="../resources/js/ajax.js"></script>
 </body>
 </html>
