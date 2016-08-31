@@ -32,104 +32,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-    <header class="main-header">
-        <!-- Logo -->
-        <a href="<?php echo $base_url; ?>bluescms/#" class="logo">
-            <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">蓝山</span>
-            <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">蓝山工作室</span>
-        </a>
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-            <!-- Sidebar toggle button-->
-            <a href="<?php echo $base_url; ?>bluescms/#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                    <!-- User Account: style can be found in dropdown.less -->
-                    <li class="dropdown user user-menu">
-                        <a href="<?php echo $base_url; ?>bluescms/#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="<?php echo $base_url; ?>bluescms/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">annsshadow</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- User image -->
-                            <li class="user-header">
-                                <img src="<?php echo $base_url; ?>bluescms/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                <p>
-                                    annsshadow
-                                    <small>超级管理员</small>
-                                </p>
-                            </li>
-                            <!-- Menu Footer-->
-                            <li class="user-footer text-center">
-                                <div class="btn-group">
-                                    <a href="<?php echo $base_url; ?>bluescms/user_password.html" class="btn btn-default">修改密码</a>
-                                    <a href="<?php echo $base_url; ?>bluescms/#" class="btn btn-default">用户信息</a>
-                                    <a href="<?php echo $base_url; ?>bluescms/#" class="btn btn-default">退出系统</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Control Sidebar Toggle Button -->
-                    <li>
-                        <a href="<?php echo $base_url; ?>bluescms/#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-            <!-- Sidebar user panel -->
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="<?php echo $base_url; ?>bluescms/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-                    <p>annsshadow	</p>
-                    <a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-circle text-success"></i> 超级管理员</a>
-                </div>
-            </div>
-            <ul class="sidebar-menu">
-                <li class="header">管理菜单</li>
-                <li>
-                    <a href="<?php echo $base_url; ?>bluescms/#">
-                        <i class="fa fa-th"></i>
-                        <span>权限管理</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="sidebar_menu_list">
-                        <li><a href="<?php echo $base_url; ?>bluescms/user_list.html"><i class="fa fa-circle-o"></i> 管理员管理</a></li>
-                        <li><a href="<?php echo $base_url; ?>bluescms/role_list.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
-                    </ul>
-                </li>
-                <li class="active">
-                    <a href="<?php echo $base_url; ?>bluescms/#">
-                        <i class="fa fa-pie-chart"></i>
-                        <span>内容管理</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="sidebar_menu_list">
-                        <li><a href="<?php echo $base_url; ?>bluescms/article_list.html"><i class="fa fa-circle-o"></i> 文章管理</a></li>
-                        <li><a href="<?php echo $base_url; ?>bluescms/download_list.html"><i class="fa fa-circle-o"></i> 下载管理</a></li>
-                        <li><a href="<?php echo $base_url; ?>bluescms/friendlink_list.html"><i class="fa fa-circle-o"></i> 友情链接</a></li>
-                        <li class="active"><a href="<?php echo $base_url; ?>bluescms/menu_list.html"><i class="fa fa-circle-o"></i> 导航栏目</a></li>
-                        <li><a href="<?php echo $base_url; ?>bluescms/log_list.html"><i class="fa fa-circle-o"></i> 系统日志</a></li>
-                        <li><a href="<?php echo $base_url; ?>bluescms/tag_list.html"><i class="fa fa-circle-o"></i> 标签管理</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <!-- /.sidebar -->
-    </aside>
+    <?php include 'header.php'; ?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -139,7 +42,7 @@
                 添加友情链接
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 友情链接管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/friendlink/"><i class="fa fa-dashboard"></i> 友情链接管理</a></li>
                 <li class="active">添加友情链接</li>
             </ol>
         </section>

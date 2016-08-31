@@ -42,7 +42,7 @@
                 添加管理员
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 管理员管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/user/"><i class="fa fa-dashboard"></i> 管理员管理</a></li>
                 <li class="active">添加管理员</li>
             </ol>
         </section>

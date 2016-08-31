@@ -40,19 +40,13 @@
                 下载文件列表
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 下载管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/download/"><i class="fa fa-dashboard"></i> 下载管理</a></li>
                 <li class="active">下载文件列表</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="alert alert-warning alert-dismissible delete_warning hidden">
-                <h4 class="no-margin">
-                    <i class="icon fa fa-warning"></i>确认要删除吗?
-                    <a href="<?php echo $base_url; ?>bluescms/#" type="button" class="btn btn-sm btn-danger margin">确认</a>
-                </h4>
-            </div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="box">
@@ -89,11 +83,11 @@
                                 <tr>
                                     <td><?php echo $value['menu_name']; ?></td>
                                     <td><?php echo $value['createtime'];?></td>
-                                    <td><a href="<?php echo $base_url; ?>bluescms/<?php echo $value['url_download']?>"><?php echo $value['headline']?></a></td>
+                                    <td><a href="<?php echo $value['url_download']?>"><?php echo $value['headline']?></a></td>
                                     <td><?php echo $value['author'];?></td>
                                     <td>
                                         <div class="btn-group btn-group-xs">
-                                            <a href="<?php echo $base_url; ?>bluescms/<?php echo $value['url_delete']?>" class="btn btn-default list_delete">删除</a>
+                                            <a href="<?php echo $value['url_delete']?>" class="btn btn-default list_delete">删除</a>
                                         </div>
                                     </td>
                                 </tr>

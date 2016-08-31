@@ -40,20 +40,13 @@
                 管理员列表
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 管理员管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/user/"><i class="fa fa-dashboard"></i> 管理员管理</a></li>
                 <li class="active">管理员列表</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="alert alert-warning alert-dismissible delete_warning hidden">
-                <h4 class="no-margin">
-                    <i class="icon fa fa-warning"></i>确认要删除吗?
-                    <a href="#" type="button" class="btn btn-sm btn-danger margin">确认</a>
-<!--                    删除这里没有办法获取要删除的id-->
-                </h4>
-            </div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="box">
@@ -93,7 +86,7 @@
                                         <td>
                                             <div class="btn-group btn-group-xs">
                                                 <a href="<?php echo $first['url_edit'];?>" class="btn btn-default">编辑</a>
-                                                <a href="#" class="btn btn-default list_delete">删除</a>
+                                                <a href="<?php echo $first['url_delete'];?>" class="btn btn-default list_delete">删除</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -104,15 +97,6 @@
                                 </tbody>
                             </table>
                         </div><!-- /.box-body -->
-                        <div class="box-footer clearfix">
-                            <ul class="pagination pagination-sm no-margin pull-right">
-                                <li><a href="#">上一页</a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">下一页</a></li>
-                            </ul>
-                        </div>
                     </div><!-- /.box -->
 
                 </div><!-- /.col -->

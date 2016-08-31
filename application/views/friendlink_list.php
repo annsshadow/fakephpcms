@@ -40,19 +40,13 @@
                 友情链接列表
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 友情链接管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/friendlink/"><i class="fa fa-dashboard"></i> 友情链接管理</a></li>
                 <li class="active">友情链接列表</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="alert alert-warning alert-dismissible delete_warning hidden">
-                <h4 class="no-margin">
-                    <i class="icon fa fa-warning"></i>确认要删除吗?
-                    <a href="<?php echo $base_url; ?>bluescms/#" type="button" class="btn btn-sm btn-danger margin">确认</a>
-                </h4>
-            </div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="box">
@@ -101,15 +95,6 @@
                                 </tbody>
                             </table>
                         </div><!-- /.box-body -->
-<!--                        <div class="box-footer clearfix">-->
-<!--                            <ul class="pagination pagination-sm no-margin pull-right">-->
-<!--                                <li><a href="--><?php //echo $base_url; ?><!--bluescms/#">上一页</a></li>-->
-<!--                                <li class="active"><a href="--><?php //echo $base_url; ?><!--bluescms/#">1</a></li>-->
-<!--                                <li><a href="--><?php //echo $base_url; ?><!--bluescms/#">2</a></li>-->
-<!--                                <li><a href="--><?php //echo $base_url; ?><!--bluescms/#">3</a></li>-->
-<!--                                <li><a href="--><?php //echo $base_url; ?><!--bluescms/#">下一页</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
                     </div><!-- /.box -->
 
                 </div><!-- /.col -->

@@ -40,19 +40,13 @@
                 文章列表
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 文章管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/article/"><i class="fa fa-dashboard"></i> 文章管理</a></li>
                 <li class="active">文章列表</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="alert alert-warning alert-dismissible delete_warning hidden">
-                <h4 class="no-margin">
-                    <i class="icon fa fa-warning"></i>确认要删除吗?
-                    <a href="<?php echo $base_url; ?>bluescms/#" type="button" class="btn btn-sm btn-danger margin">确认</a>
-                </h4>
-            </div>
             <div class="row">
                 <div class="col-xs-12">
                     <div class="box">
@@ -118,7 +112,7 @@
                                     <td>
                                         <div class="btn-group btn-group-xs">
                                             <a href="<?php echo $value['url_edit'];?>" class="btn btn-default">编辑</a>
-                                            <a href="<?php echo $base_url; ?>bluescms/#" class="btn btn-default list_delete">删除</a>
+                                            <a href="<?php echo $value['url_delete']; ?>" class="btn btn-default list_delete">删除</a>
                                         </div>
                                     </td>
                                 </tr>

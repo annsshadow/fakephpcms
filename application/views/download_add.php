@@ -42,7 +42,7 @@
                 添加下载文件
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 下载管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/download/"><i class="fa fa-dashboard"></i> 下载管理</a></li>
                 <li class="active">下载文件</li>
             </ol>
         </section>

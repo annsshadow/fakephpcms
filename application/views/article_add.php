@@ -42,7 +42,7 @@
                 添加文章
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 文章管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/article/"><i class="fa fa-dashboard"></i> 文章管理</a></li>
                 <li class="active">添加文章</li>
             </ol>
         </section>

@@ -40,7 +40,7 @@
                 系统日志列表
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 系统日志管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/log/"><i class="fa fa-dashboard"></i> 系统日志管理</a></li>
                 <li class="active">系统日志列表</li>
             </ol>
         </section>

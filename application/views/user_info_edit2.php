@@ -28,6 +28,35 @@
     <script src="<?php echo $base_url; ?>bluescms/dist/js/html5shiv.min.js"></script>
     <script src="<?php echo $base_url; ?>bluescms/dist/js/respond.min.js"></script>
     <![endif]-->
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="<?php echo $base_url;?>bluescms/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="<?php echo $base_url;?>bluescms/ueditor/ueditor.all.js"></script>
+    <style type="text/css">
+        #ueditor{
+            position: relative;
+        }
+        #container{
+            position: relative;
+            top: 0;
+        }
+        #container1{
+            position: relative;
+            top: 0;
+        }
+        #container2{
+            position: relative;
+            top: 0;
+        }
+        #submitBtn{
+            position: relative;
+            top: 430px;
+        }
+        .fix{
+            padding: 15px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -39,11 +68,11 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                添加广告项目
+                编辑用户信息
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/index.php/ad/"><i class="fa fa-dashboard"></i> 广告管理</a></li>
-                <li class="active">添加广告项目</li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/user/user_info_show"><i class="fa fa-dashboard"></i> 个人信息</a></li>
+                <li class="active">编辑用户信息</li>
             </ol>
         </section>
 
@@ -51,39 +80,68 @@
         <section class="content">
 
             <div class="row">
-                <div class="col-sm-8">
-                    <form method="post" action="<?php echo $base_url . 'bluescms/index.php/ad/ad_add_post/';?>">
+                <div class="col-sm-6">
+                    <form method="post" id="form" action="<?php echo $base_url;?>bluescms/index.php/user/user_info_edit_post/">
+                        <input type="hidden" name="info_id" value="<?php echo $result['info_id']?>"/>
                         <div class="box">
                             <div class="box-body">
                                 <div class="margin">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><strong>名称</strong></span>
-                                            <input type="text" class="form-control" name="ad_headline" placeholder="广告名称">
+                                            <span class="input-group-addon"><strong>中文名称名</strong></span>
+                                            <input type="text" class="form-control" name="chinese_name" value="<?php echo $result['chinese_name']?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><strong>链接</strong></span>
-                                            <input type="text" class="form-control" name="ad_url" placeholder="广告链接(需要http://)">
+                                            <span class="input-group-addon"><strong>个人短路径名</strong></span>
+                                            <input type="text" class="form-control" name="short_name" value="<?php echo $result['short_name'];?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><strong>广告图片</strong></span>
+                                            <span class="input-group-addon"><strong>用户照片</strong></span>
                                             <div id ="ueditor">
                                                 <!-- 加载编辑器的容器 -->
-                                                <script id="container" name="content" type="text/plain">
+                                                <script id="container" name="user_photo" type="text/plain">
+                                                    <?php echo $result['user_photo'];?>
                                                 </script>
-                                                <!-- 配置文件 -->
-                                                <script type="text/javascript" src="<?php echo $base_url;?>bluescms/ueditor/ueditor.config.js"></script>
-                                                <!-- 编辑器源码文件 -->
-                                                <script type="text/javascript" src="<?php echo $base_url;?>bluescms/ueditor/ueditor.all.js"></script>
                                                 <!-- 实例化编辑器 -->
-                                                        <script type="text/javascript">
-                                                          var ue = UE.getEditor('container');
-                                                        </script>
+                                                <script type="text/javascript">
+                                                    var ue = UE.getEditor('container',{toolbars:[['simpleupload']],initialFrameWidth : 666,initialFrameHeight : 100});
+                                                </script>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><strong>联系方式</strong></span>
+                                            <div id ="ueditor">
+                                                <!-- 加载编辑器的容器 -->
+                                                <script id="container1" name="user_content" type="text/plain">
+                                                    <?php echo $result['user_content'];?>
+                                                </script>
+                                                <!-- 实例化编辑器 -->
+                                                <script type="text/javascript">
+                                                    var ue1 = UE.getEditor('container1', {initialFrameWidth : 666,initialFrameHeight: 100});
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><strong>个人简介</strong></span>
+                                            <div id ="ueditor">
+                                                <!-- 加载编辑器的容器 -->
+                                                <script id="container2" name="user_cv" type="text/plain">
+                                                    <?php echo $result['user_cv'];?>
+                                                </script>
+                                                <!-- 实例化编辑器 -->
+                                                <script type="text/javascript">
+                                                    var ue2 = UE.getEditor('container2', {initialFrameWidth : 666,initialFrameHeight: 100});
+                                                </script>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="input-group pull-right">
                                         <input type="submit" name="submit" value="提交" class="btn btn-primary">

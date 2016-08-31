@@ -42,7 +42,7 @@
                 编辑二级栏目
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo $base_url; ?>bluescms/#"><i class="fa fa-dashboard"></i> 栏目管理</a></li>
+                <li><a href="<?php echo $base_url; ?>bluescms/index.php/menu/"><i class="fa fa-dashboard"></i> 栏目管理</a></li>
                 <li class="active">编辑二级栏目</li>
             </ol>
         </section>
